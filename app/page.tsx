@@ -14,7 +14,7 @@ export default function Home() {
     await fetch("/api/scraper/screenshot", {
       method: "POST",
       body: JSON.stringify({
-        siteUrl: "http://localhost:3001",
+        siteUrl: "http://localhost:3000",
       }),
     })
       .then((res) => res.blob())
@@ -39,7 +39,7 @@ export default function Home() {
     await fetch("/api/scraper/basic", {
       method: "POST",
       body: JSON.stringify({
-        siteUrl: "http://localhost:3001",
+        siteUrl: "http://localhost:3000",
       }),
     });
   };
